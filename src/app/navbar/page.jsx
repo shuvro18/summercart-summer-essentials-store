@@ -21,7 +21,7 @@ const Navbar = () => {
                         <ul tabIndex="-1" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li> <NavLink href="/">Homepage</NavLink> </li>
                             <li> <NavLink href="/products">Products</NavLink> </li>
-                            <li> <NavLink href="/profile">My Portfolio</NavLink> </li>
+                            <li> <NavLink href="/profile">My Profile </NavLink> </li>
                         </ul>
                     </div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <div className="flex gap-6 font-medium">
                         <NavLink href="/">Homepage</NavLink> 
                         <NavLink href="/products">Products</NavLink> 
-                        <NavLink href="/profile">My Portfolio</NavLink> 
+                        <NavLink href="/profile">My Profile </NavLink> 
                     </div>
                 </div>
 
@@ -62,21 +62,16 @@ const Navbar = () => {
                         </div>
                     </div> */}
 
-                    <div className="dropdown dropdown-end">
+                    <div className="flex justify-center items-center gap-3">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full bg-slate-200">
                                 {/* For the profile picture*/}
                             </div>
                         </div>
-                        <ul tabIndex="-1" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li>
-                                <a className="justify-between">
-                                    My Profile
-                                    <span className="badge">New</span>
-                                </a>
-                            </li>
-                            <li><a>Logout</a></li>
-                        </ul>
+                        <div className="">
+                            <Link href="/logout"> Logout </Link>
+                        </div>
+                        
                     </div>
                 </div>
 
