@@ -8,6 +8,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const RegisterPage = () => {
     const [name, setName] = useState('');
+    const [url, setUrl] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -24,7 +25,8 @@ const RegisterPage = () => {
               email: email,
               password: password,
               name: name,
-              callbackURL: "/dashboard" // সফল হলে যেখানে রিডাইরেক্ট হবে
+              image: url,
+              callbackURL: "/" // সফল হলে যেখানে রিডাইরেক্ট হবে
             });
       
             if (error) {
@@ -32,7 +34,7 @@ const RegisterPage = () => {
             }
             */
 
-            console.log({ name, email, password });
+            console.log({ name, email, password, url });
         } catch (err) {
             console.error(err);
         } finally {
@@ -75,6 +77,26 @@ const RegisterPage = () => {
                                 placeholder="John Doe"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                required
+                                className="input input-ghost w-full bg-transparent text-white placeholder-slate-600 border-none focus:outline-none h-12 text-sm"
+                            />
+                        </div>
+                    </div>
+
+                    {/* URL Fieldset */}
+                    <div className="form-control w-full">
+                        <label className="label pt-0">
+                            <span className="label-text text-slate-300 font-medium text-xs">Image Url</span>
+                        </label>
+                        <div className="relative flex items-center bg-slate-950/40 rounded-xl border border-white/10 focus-within:border-purple-500 transition-all">
+                            <div className="pl-4 text-slate-400">
+                                <HiOutlineUser className="text-lg" />
+                            </div>
+                            <input
+                                type="text"
+                                placeholder="www.image_link.com"
+                                value={url}
+                                onChange={(e) => setUrl(e.target.value)}
                                 required
                                 className="input input-ghost w-full bg-transparent text-white placeholder-slate-600 border-none focus:outline-none h-12 text-sm"
                             />
