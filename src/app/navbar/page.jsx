@@ -1,9 +1,18 @@
+'use client'
+
 import Link from 'next/link';
 import logo from '@/app/logo.jpg';
 import Image from 'next/image';
 import NavLink from '../components/NavLink';
+import { authClient } from '@/lib/auth-client';
+
 
 const Navbar = () => {
+    const { data: session } = authClient.useSession();
+    const user = session?.user
+    console.log(user);
+
+
     return (
         <div className='bg-base-100 shadow-sm '>
 
@@ -27,7 +36,7 @@ const Navbar = () => {
 
                     <Link href={"/"} className="btn btn-ghost text-xl gap-2 px-2">
                         <Image src={logo} height={40} width={40} alt="logo" className='rounded-full' />
-                        
+
                         <h1 className="hidden md:inline text-3xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-pink-500 via-purple-500 to-cyan-500 tracking-wide">
                             Summer<span className="text-secondary">CART</span>
                         </h1>
@@ -65,17 +74,25 @@ const Navbar = () => {
                         </div>
                     </div> */}
 
-                    <div className="flex justify-center items-center gap-3">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full bg-slate-200">
-                                {/* For the profile picture*/}
+                    {user ? (
+                        <div className="flex justify-center items-center gap-3">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full bg-slate-200">
+                                    <Image src={user.image} width={60} height={60} alt="user's picture"></Image>
+                                </div>
                             </div>
-                        </div>
-                        <div className="">
-                            <Link href="/logout"> Logout </Link>
-                        </div>
+                            <div className="">
+                                <Link href="/logout"> Logout </Link>
+                            </div>
 
-                    </div>
+                        </div>
+                    ) : (
+                        <div>
+                            <Link href="/login" className="btn btn-sm btn-primary bg-linear-to-r from-purple-600 to-pink-600 border-none text-white font-bold">
+                                Login
+                            </Link>
+                        </div>
+                    )}
                 </div>
 
             </div>

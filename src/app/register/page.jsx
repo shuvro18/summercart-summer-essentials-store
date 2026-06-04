@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { HiOutlineUser, HiOutlineMail, HiOutlineLockClosed, HiOutlineEye, HiOutlineEyeOff } from 'react-icons/hi';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
+import { authClient } from '@/lib/auth-client';
+import { useRouter } from 'next/navigation';
+
 
 const RegisterPage = () => {
     const [name, setName] = useState('');
@@ -13,28 +16,31 @@ const RegisterPage = () => {
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false); // Better-Auth সাবমিশনের সময় লোডিং দেখানোর জন্য
+    const router = useRouter();
 
     const handleRegister = async (e) => {
+       
         e.preventDefault();
         setLoading(true);
 
         try {
-            // 💡 Better-Auth ইন্টিগ্রেশনের সময় এখানে নিচের কোডটুকু ব্যবহার করবেন:
-            /*
+            // 💡 Better-Auth 
+            
             const { data, error } = await authClient.signUp.email({
               email: email,
-              password: password,
+              password: password, 
               name: name,
               image: url,
-              callbackURL: "/" // সফল হলে যেখানে রিডাইরেক্ট হবে
+            //   callbackURL: "/",
             });
       
             if (error) {
               alert(error.message);
-            }
-            */
+              return
+            }    
+                 
 
-            console.log({ name, email, password, url });
+         router.push("/");  
         } catch (err) {
             console.error(err);
         } finally {
