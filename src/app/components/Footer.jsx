@@ -72,13 +72,13 @@ const FooterPage = () => {
             <h3 className="text-white font-semibold text-base tracking-wider uppercase">Legal & Policies</h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/privacy-policy" className="hover:text-purple-400 transition-colors block">Privacy Policy</Link>
+                <Link href="/privacy" className="hover:text-purple-400 transition-colors block">Privacy Policy</Link>
               </li>
               <li>
                 <Link href="/terms" className="hover:text-purple-400 transition-colors block">Terms & Conditions</Link>
               </li>
               <li>
-                <Link href="/refund-policy" className="hover:text-purple-400 transition-colors block">Refund Policy</Link>
+                <Link href="/refund" className="hover:text-purple-400 transition-colors block">Refund Policy</Link>
               </li>
             </ul>
           </div>
