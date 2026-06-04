@@ -52,16 +52,16 @@ const FooterPage = () => {
             <h3 className="text-white font-semibold text-base tracking-wider uppercase">Follow Us</h3>
             <p className="text-sm text-slate-400">Stay connected on our social media handles for exciting updates.</p>
             <div className="flex items-center gap-3 pt-1">
-              <a href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-purple-600 hover:border-purple-500 transition-all duration-300 hover:scale-110">
+              <a href="https://www.facebook.com/shuvro.biswas.nayon" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-purple-600 hover:border-purple-500 transition-all duration-300 hover:scale-110">
                 <FaFacebookF size={16} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-cyan-500 hover:border-cyan-400 transition-all duration-300 hover:scale-110">
+              <a href="#"  className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-cyan-500 hover:border-cyan-400 transition-all duration-300 hover:scale-110">
                 <FaTwitter size={16} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-600 hover:border-pink-500 transition-all duration-300 hover:scale-110">
+              <a href="https://www.instagram.com/nayon____________/" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-600 hover:border-pink-500 transition-all duration-300 hover:scale-110">
                 <FaInstagram size={16} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-800 hover:border-slate-700 transition-all duration-300 hover:scale-110">
+              <a href="https://github.com/shuvro18" target='_blank' rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-800 hover:border-slate-700 transition-all duration-300 hover:scale-110">
                 <FaGithub size={16} />
               </a>
             </div>
@@ -89,7 +89,7 @@ const FooterPage = () => {
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} SummerCART. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="/privacy-policy" className="hover:underline">Privacy</Link>
+            <Link href="/privacy" className="hover:underline">Privacy</Link>
             <Link href="/terms" className="hover:underline">Terms</Link>
             <Link href="/cookies" className="hover:underline">Cookies</Link>
           </div>
