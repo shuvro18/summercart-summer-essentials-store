@@ -5,6 +5,7 @@ import logo from '@/app/logo.jpg';
 import Image from 'next/image';
 import NavLink from '../components/NavLink';
 import { authClient } from '@/lib/auth-client';
+import man from '@/app/man.jpg'
 
 
 const Navbar = () => {
@@ -78,11 +79,13 @@ const Navbar = () => {
                         <div className="flex justify-center items-center gap-3">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full bg-slate-200">
-                                    <Image src={user.image} width={60} height={60} alt="user's picture"></Image>
+                                    <Image src={user.image || man} width={60} height={60} alt="user's picture"></Image>
                                 </div>
                             </div>
                             <div className="">
-                                <Link href="/logout"> Logout </Link>
+                                <button onClick={async()=>await authClient.signOut()} className="btn btn-sm btn-primary bg-linear-to-r from-purple-600 to-pink-600 border-none text-white font-bold">
+                                    Logout
+                                </button>
                             </div>
 
                         </div>
