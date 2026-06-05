@@ -11,7 +11,7 @@ import man from '@/app/man.jpg'
 const Navbar = () => {
     const { data: session } = authClient.useSession();
     const user = session?.user
-    console.log(user);
+    
 
 
     return (

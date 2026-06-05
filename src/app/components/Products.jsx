@@ -1,21 +1,23 @@
 
 
 import Image from "next/image";
-import Link from "next/link";
 import { HiStar } from "react-icons/hi";
-
-
+import NavLink from "./NavLink";
 
 const Products = async () => {
     const res = await fetch("http://localhost:3000/data.json");
     const product = await res.json();
-    // console.log(product);
+    console.log(product);
     return (
         <div>
+            <div className="flex justify-center items-center gap-5  pt-10">
+                <NavLink href="/" className=" text-xl font-bold text-center" > Popular Products </NavLink>
+                <NavLink href="/summercare" className=" text-xl font-bold text-center " > Summer Care Tips </NavLink>
+                <NavLink href="/topbrands" className=" text-xl font-bold text-center " > Top Brands </NavLink>
+            </div>
             
-            <p className=" text-4xl text-center font-bold">All Products</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 container mx-auto py-10">
-                {product.map((product) => (
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 container mx-auto py-10">
+                {product.slice(0, 3).map((product) => (
                     <div key={product.id} className="group  flex flex-col justify-between border border-secondary rounded-2xl">
 
                         <div>
@@ -78,14 +80,12 @@ const Products = async () => {
                             </div>
 
                             {/* মিনিমালিস্ট 'Add' বাটন */}
-                            <Link href={`/products/${product.id}`}>
-                                <button
+                            <button
                                 disabled={product.stock === 0}
                                 className="px-4 py-2 text-xs font-bold text-white bg-[#5C1D24] hover:bg-[#421419] disabled:bg-gray-200 disabled:text-gray-400 rounded-xl transition-all active:scale-95 shadow-xs"
                             >
                                 Show details
                             </button>
-                            </Link>
                         </div>
 
                     </div>
