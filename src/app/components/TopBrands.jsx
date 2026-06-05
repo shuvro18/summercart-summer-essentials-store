@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { HiStar } from "react-icons/hi";
+import Link from "next/link";
 
 const TopBrands = () => {
   return (
@@ -18,12 +19,12 @@ const TopBrands = () => {
             Discover our handpicked collection of elite brands dedicated to delivering top-tier quality, sustainability, and premium summer comfort.
           </p>
         </div>
-        
+
         {/* 📱 ৪ কলামের রেসপন্সিভ গ্রিড কন্টেইনার */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          
+
           {/* 📦 কার্ড ১ */}
-          <div className="group cursor-pointer">
+          <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image
                 src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600"
@@ -46,10 +47,10 @@ const TopBrands = () => {
                 <span>4.9</span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* 📦 কার্ড ২ */}
-          <div className="group cursor-pointer">
+          <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image
                 src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
@@ -72,10 +73,10 @@ const TopBrands = () => {
                 <span>4.8</span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* 📦 কার্ড ৩ */}
-          <div className="group cursor-pointer">
+          <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image
                 src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
@@ -98,10 +99,10 @@ const TopBrands = () => {
                 <span>4.7</span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* 📦 কার্ড ৪ */}
-          <div className="group cursor-pointer">
+          <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image
                 src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600"
@@ -124,7 +125,7 @@ const TopBrands = () => {
                 <span>5.0</span>
               </div>
             </div>
-          </div>
+          </Link>
 
         </div>
 
