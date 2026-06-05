@@ -7,6 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import { authClient } from '@/lib/auth-client';
 import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify';
 
 
 const RegisterPage = () => {
@@ -15,7 +16,7 @@ const RegisterPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-    const [loading, setLoading] = useState(false); // Better-Auth সাবমিশনের সময় লোডিং দেখানোর জন্য
+    const [loading, setLoading] = useState(false); // Better-Auth 
     const router = useRouter();
 
     const handleRegister = async (e) => {
@@ -35,7 +36,7 @@ const RegisterPage = () => {
             });
       
             if (error) {
-              alert(error.message);
+              toast.error(error.message);
               return
             }    
                  

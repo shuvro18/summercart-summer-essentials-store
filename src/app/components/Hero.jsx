@@ -4,18 +4,32 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const HeroSection = () => {
     return (
-        <div className='bg-base-100'>
-            <div className="container mx-auto">
-                <div>
-                    <Marquee> <p className='text-center md:text-3xl lg:text-6xl py-5'> It Is Time For You To SHOPING </p> </Marquee>
-                    <div className="mx-auto">
-                        <DotLottieReact
-                            data={Hero}
-                            loop
-                            autoplay
-                        />
+        <div>
+            <div className="className='bg-base-100 py-10 text-[#5C1D24]'">
+
+                <div className="max-w-6xl mx-auto px-4">
+
+
+
+                    <div className="bg-amber-100 py-2.5 rounded-full mb-8 overflow-hidden border border-amber-200">
+                        <Marquee gradient={false} speed={50} className="text-xs font-bold tracking-widest uppercase">
+                            <span className="mx-8">☀️ Summer Sale 50% OFF! ☀️</span>
+                            <span className="mx-8">🔥 Hot Deals Live Now 🔥</span>
+                            <span className="mx-8">🌿 Pure Premium Comfort 🌿</span>
+                            <span className="mx-8">☀️ Summer Sale 50% OFF! ☀️</span>
+                            <span className="mx-8">🔥 Hot Deals Live Now 🔥</span>
+                        </Marquee>
                     </div>
+
                 </div>
+                <div className="">
+                    <DotLottieReact
+                        data={Hero}
+                        loop
+                        autoplay
+                    />
+                </div>
+
 
             </div>
         </div>

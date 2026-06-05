@@ -6,6 +6,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import { authClient } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -25,7 +26,7 @@ const LoginForm = () => {
       });
 
       if (error) {
-        alert(error.message)
+        toast.error(error.message)
       }
     } catch (err) {
       console.error(err);
