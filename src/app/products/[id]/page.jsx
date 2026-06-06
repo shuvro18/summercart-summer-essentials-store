@@ -2,7 +2,7 @@
 
 
 import Image from "next/image";
-import { HiStar, HiArrowLeft, HiOutlineShoppingBag, HiCheckCircle } from "react-icons/hi";
+import { HiStar, HiOutlineShoppingBag, HiCheckCircle } from "react-icons/hi";
 
 const ProductDetailsPage = async ({ params }) => {
     const { id } = await params;
