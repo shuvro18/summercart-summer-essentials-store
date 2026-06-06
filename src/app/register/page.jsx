@@ -60,14 +60,14 @@ const RegisterPage = () => {
     return (
         <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-950 to-slate-900 flex items-center justify-center px-4 py-12 relative overflow-hidden">
 
-            {/* ব্যাকগ্রাউন্ড গ্লোয়িং ইফেক্ট */}
+           
             <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-            {/* মেইন রেজিস্টার কার্ড (Glassmorphism) */}
+            
             <div className="max-w-md w-full backdrop-blur-md bg-white/5 p-8 rounded-3xl border border-white/10 shadow-2xl z-10">
 
-                {/* হেডিং */}
+                
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-pink-500 via-purple-500 to-cyan-500 tracking-wide">
                         Summer<span className="text-secondary">CART</span>
@@ -75,10 +75,10 @@ const RegisterPage = () => {
                     <p className="text-slate-400 text-xs mt-2">Create your account to start shopping.</p>
                 </div>
 
-                {/* ফর্ম শুরু */}
+               
                 <form onSubmit={handleRegister} className="space-y-4">
 
-                    {/* ১. নাম (Full Name) ফিল্ড */}
+                    
                     <div className="form-control w-full">
                         <label className="label pt-0">
                             <span className="label-text text-slate-300 font-medium text-xs">Full Name</span>
@@ -118,7 +118,7 @@ const RegisterPage = () => {
                         </div>
                     </div>
 
-                    {/* ২. ইমেইল ফিল্ড */}
+                   
                     <div className="form-control w-full">
                         <label className="label pt-0">
                             <span className="label-text text-slate-300 font-medium text-xs">Email Address</span>
@@ -138,7 +138,7 @@ const RegisterPage = () => {
                         </div>
                     </div>
 
-                    {/* ৩. পাসওয়ার্ড ফিল্ড */}
+                   
                     <div className="form-control w-full">
                         <label className="label pt-0">
                             <span className="label-text text-slate-300 font-medium text-xs">Password</span>
@@ -165,7 +165,7 @@ const RegisterPage = () => {
                         </div>
                     </div>
 
-                    {/* টার্মস অ্যান্ড কন্ডিশন চেকবক্স */}
+                    
                     <div className="flex items-center pt-1">
                         <label className="label cursor-pointer justify-start gap-3 p-0">
                             <input type="checkbox" required className="checkbox checkbox-xs checkbox-secondary rounded" />
@@ -173,7 +173,7 @@ const RegisterPage = () => {
                         </label>
                     </div>
 
-                    {/* সাইন আপ বাটন (লোডিং স্টেট সহ) */}
+                    
                     <button
                         type="submit"
                         disabled={loading}

@@ -9,16 +9,16 @@ const FooterPage = () => {
   return (
     <footer className="relative bg-slate-950 text-slate-400 border-t border-white/10 overflow-hidden">
       
-      {/* ব্যাকগ্রাউন্ডের জন্য হালকা গ্লো ইফেক্ট */}
+     
       <div className="absolute top-0 left-1/4 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="container mx-auto px-4 py-12 relative z-10">
         
-        {/* মেইন গ্রিড লেআউট (মোবাইলে ১ কলাম, ট্যাবলেটে ২ কলাম, ডেক্সটপে ৪ কলাম) */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           
-          {/* ১. ব্র্যান্ড ইনফো */}
+         
           <div className="space-y-4">
             <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-pink-500 via-purple-500 to-cyan-500 tracking-wide">
               Summer<span className="text-secondary">CART</span>
@@ -28,7 +28,7 @@ const FooterPage = () => {
             </p>
           </div>
 
-          {/* ২. কন্টাক্ট ইনফো (Contact Info) */}
+          
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-base tracking-wider uppercase">Contact Info</h3>
             <ul className="space-y-3 text-sm">
@@ -47,7 +47,7 @@ const FooterPage = () => {
             </ul>
           </div>
 
-          {/* ৩. সোশ্যাল লিংক (Social Links) */}
+          {/*  (Social Links) */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-base tracking-wider uppercase">Follow Us</h3>
             <p className="text-sm text-slate-400">Stay connected on our social media handles for exciting updates.</p>
@@ -67,7 +67,7 @@ const FooterPage = () => {
             </div>
           </div>
 
-          {/* ৪. কুইক লিংক ও প্রাইভেসী (Privacy Policy) */}
+          
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-base tracking-wider uppercase">Legal & Policies</h3>
             <ul className="space-y-2.5 text-sm">
@@ -85,7 +85,7 @@ const FooterPage = () => {
 
         </div>
 
-        {/* বটম কপিরাইট ও লিগ্যাল সেকশন */}
+        
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} SummerCART. All rights reserved.</p>
           <div className="flex gap-4">

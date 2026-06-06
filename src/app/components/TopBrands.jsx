@@ -20,7 +20,7 @@ const TopBrands = () => {
           </p>
         </div>
 
-        {/* 📱 ৪ কলামের রেসপন্সিভ গ্রিড কন্টেইনার */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {/* 📦 কার্ড ১ */}
@@ -49,7 +49,7 @@ const TopBrands = () => {
             </div>
           </Link>
 
-          {/* 📦 কার্ড ২ */}
+          
           <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image
@@ -75,7 +75,7 @@ const TopBrands = () => {
             </div>
           </Link>
 
-          {/* 📦 কার্ড ৩ */}
+          
           <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image
@@ -101,7 +101,7 @@ const TopBrands = () => {
             </div>
           </Link>
 
-          {/* 📦 কার্ড ৪ */}
+          
           <Link href="/products" className="group cursor-pointer">
             <div className="relative aspect-4/3 w-full rounded-2xl border border-gray-200/70 overflow-hidden bg-white shadow-xs group-hover:shadow-md transition-all duration-300">
               <Image

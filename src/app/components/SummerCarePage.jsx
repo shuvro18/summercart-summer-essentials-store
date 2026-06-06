@@ -7,7 +7,7 @@ const SummerCarePage = () => {
     <div className="bg-[#FCF9F6] min-h-screen py-16 px-4 sm:px-8 lg:px-16 text-[#5C1D24]">
       <div className="max-w-6xl mx-auto">
         
-        {/* ☀️ 1. Header Section */}
+        
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-[10px] font-bold tracking-widest uppercase bg-amber-100 text-amber-800 px-3 py-1 rounded-full">
             Summer Essentials
@@ -20,7 +20,7 @@ const SummerCarePage = () => {
           </p>
         </div>
 
-        {/* 🌊 2. Main Banner Image */}
+        
         <div className="relative aspect-21/9 w-full rounded-3xl overflow-hidden border border-gray-200/60 shadow-xs mb-16 bg-white">
           <Image 
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" 
