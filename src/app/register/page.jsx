@@ -41,7 +41,7 @@ const RegisterPage = () => {
             }    
                  
 
-         router.push("/");  
+         router.push("/login");  
         } catch (err) {
             console.error(err);
         } finally {

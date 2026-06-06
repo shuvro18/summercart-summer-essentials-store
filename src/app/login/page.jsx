@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { HiOutlineLockClosed, HiOutlineEye, HiOutlineEyeOff } from 'react-icons/hi';
 import { FcGoogle } from 'react-icons/fc';
-import { FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import { authClient } from '@/lib/auth-client';
 import { toast } from 'react-toastify';
@@ -12,7 +11,7 @@ const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
- 
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,6 +31,13 @@ const LoginForm = () => {
       console.error(err);
     }
   };
+
+   // Google based login handler
+  const HandleGoogleLogin = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  }
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-950 to-slate-900 flex items-center justify-center px-4 py-12 relative overflow-hidden">
@@ -124,15 +130,12 @@ const LoginForm = () => {
         <div className="divider my-6 text-slate-500 text-xs font-light">OR CONTINUE WITH</div>
 
         {/* সোশ্যাল লগইন বাটন গ্রুপ */}
-        <div className="grid grid-cols-2 gap-3">
-          <button className="btn btn-outline border-white/10 hover:border-white/20 bg-slate-950/20 text-white rounded-xl gap-2 font-medium text-xs h-11 min-h-0 normal-case">
+        <div className="">
+          <button onClick={HandleGoogleLogin} className=" w-full btn btn-outline border-white/10 hover:border-white/20 bg-slate-950/20 text-white rounded-xl gap-2 font-medium text-xs h-11 min-h-0 normal-case">
             <FcGoogle className="text-lg" />
             Google
           </button>
-          <button className="btn btn-outline border-white/10 hover:border-white/20 bg-slate-950/20 text-white rounded-xl gap-2 font-medium text-xs h-11 min-h-0 normal-case">
-            <FaGithub className="text-lg" />
-            GitHub
-          </button>
+
         </div>
 
         {/* রেজিস্টার লিংক */}

@@ -59,7 +59,7 @@ const Navbar = () => {
 
                     {user ? (
                         <div className="flex justify-center items-center gap-3">
-                            <p className="text-[10px] font-bold tracking-widest uppercase bg-amber-100 text-amber-800 px-3 py-1 rounded-full">Hello {user.name}</p>
+                            <p className="text-[10px] font-bold tracking-widest uppercase  text-amber-800 px-3 py-1 ">Hello {user.name}</p>
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full bg-slate-200">
                                     <Image src={user.image || man} width={60} height={60} alt="user's picture"></Image> <br />
