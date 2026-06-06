@@ -22,7 +22,7 @@ const HeroSection = () => {
                     </div>
 
                 </div>
-                <div className="">
+                <div className="w-250 mx-auto">
                     <DotLottieReact
                         data={Hero}
                         loop

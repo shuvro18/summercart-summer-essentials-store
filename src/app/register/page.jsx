@@ -186,7 +186,7 @@ const RegisterPage = () => {
                 {/* Divider */}
                 <div className="divider my-6 text-slate-500 text-xs font-light">OR SIGN UP WITH</div>
 
-                {/* সোশ্যাল রেজিস্টার বাটন (Better-Auth এর signIn.social() এর জন্য পারফেক্ট) */}
+                {/*Better-Auth  signIn.social */}
                 <div className="">
                     <button onClick={HandleGoogleLogin} className="w-full btn btn-outline border-white/10 hover:border-white/20 bg-slate-950/20 text-white rounded-xl gap-2 font-medium text-xs h-11 min-h-0 normal-case">
                         <FcGoogle className="text-lg" />
@@ -195,7 +195,7 @@ const RegisterPage = () => {
                     
                 </div>
 
-                {/* লগইন পেজের লিংক */}
+                {/* Login Link*/}
                 <p className="text-center text-xs text-slate-400 mt-8">
                     Already have an account?{' '}
                     <Link href="/login" className="text-purple-400 font-semibold hover:underline">Sign In</Link>
