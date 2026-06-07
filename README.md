@@ -3,9 +3,10 @@
 SummerCART is a modern, responsive, and feature-rich e-commerce web application tailored for summer essentials. Built on top of the latest **Next.js** framework with **React 19**, it utilizes **Better-Auth** for secure authentication (including email/password and Google OAuth), **MongoDB** for database persistence, and a premium design system powered by **Tailwind CSS v4**, **DaisyUI v5**, and **HeroUI**.
 
 
+---
+
 repo : [repo_link](https://github.com/shuvro18/summercart-summer-essentials-store) </br>
 live link : [live_link]( https://summercart-summer-essentials-store-dusky.vercel.app/)
----
 
 ## 🚀 Features
 
@@ -64,3 +65,13 @@ live link : [live_link]( https://summercart-summer-essentials-store-dusky.vercel
 └── package.json                       # Core dependencies and scripts
 
 ```
+
+
+<img width="1919" height="87" alt="Screenshot 2026-06-07 231343" src="https://github.com/user-attachments/assets/5678b8eb-a320-4d18-a8b8-1fd920c8199a" />
+<img width="1919" height="92" alt="Screenshot 2026-06-07 231425" src="https://github.com/user-attachments/assets/0bced739-4c1c-4c38-9a84-8204ab77df29" />
+<img width="1915" height="910" alt="Screenshot 2026-06-07 231441" src="https://github.com/user-attachments/assets/f1e9d3bf-2091-44b3-8693-35dfebb8629e" />
+<img width="1919" height="907" alt="Screenshot 2026-06-07 231455" src="https://github.com/user-attachments/assets/e7a115ce-e596-48e4-96bc-ce19dece7560" />
+<img width="1919" height="915" alt="Screenshot 2026-06-07 231941" src="https://github.com/user-attachments/assets/6ae4b053-7917-4189-886e-f0b5e896ebf2" />
+<img width="1919" height="914" alt="Screenshot 2026-06-07 232021" src="https://github.com/user-attachments/assets/5e54f19d-1da7-43af-8796-b51b7117ab72" />
+
+
