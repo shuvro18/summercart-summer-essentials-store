@@ -3,8 +3,8 @@
 SummerCART is a modern, responsive, and feature-rich e-commerce web application tailored for summer essentials. Built on top of the latest **Next.js** framework with **React 19**, it utilizes **Better-Auth** for secure authentication (including email/password and Google OAuth), **MongoDB** for database persistence, and a premium design system powered by **Tailwind CSS v4**, **DaisyUI v5**, and **HeroUI**.
 
 
-repo : [repo_link](https://github.com/shuvro18/summercart-summer-essentials-store)
-live link : [live_link]( https://summercart-summer-essentials-store.vercel.app/)
+repo : [repo_link](https://github.com/shuvro18/summercart-summer-essentials-store) </br>
+live link : [live_link]( https://summercart-summer-essentials-store-dusky.vercel.app/)
 ---
 
 ## 🚀 Features
