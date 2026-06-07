@@ -1,13 +1,15 @@
 
 
 import SingleProduct from "../components/SingleProduct";
+import product from '@/data/data.json'
 
 
 
 const Products = async () => {
-    const res = await fetch("http://localhost:3000/data.json");
-    const product = await res.json();
-    // console.log(product);
+    console.log(product)
+    // const res = await fetch("http://localhost:3000/data.json");
+    // const product = await res.json();
+    // // console.log(product);
     return (
         <div>
             

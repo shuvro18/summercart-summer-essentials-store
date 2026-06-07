@@ -3,13 +3,14 @@
 
 import Image from "next/image";
 import { HiStar, HiOutlineShoppingBag, HiCheckCircle } from "react-icons/hi";
+import products from '@/data/data.json'
 
 const ProductDetailsPage = async ({ params }) => {
     const { id } = await params;
 
     // data fetch
-    const res = await fetch("http://localhost:3000/data.json");
-    const products = await res.json();
+    // const res = await fetch("http://localhost:3000/data.json");
+    // const products = await res.json();
 
     // find data by id
     const find = products.find(product => product.id === parseInt(id));

@@ -1,11 +1,11 @@
 
-
+import product from "@/data/data.json"
 
 import SingleProduct from "./SingleProduct";
 
 const Products = async () => {
-    const res = await fetch("http://localhost:3000/data.json");
-    const product = await res.json();
+    // const res = await fetch("http://localhost:3000/data.json");
+    // const product = await res.json();
 
 
 
